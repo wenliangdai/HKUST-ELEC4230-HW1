@@ -72,7 +72,7 @@ def optimize(w, b, X, Y, X_dev, Y_dev, num_iterations, learning_rate, output_nam
             max_acc = dev_acc
             max_w, max_b = w, b
 
-        print('iteration:', i + 1, ", time {0:.2f}", time.time() - start_time)
+        print(f"iteration: {i + 1}, time {time.time() - start_time:.2f}")
         print("\tTraining accuracy: {0:.4f} %, cost: {1:.4f}".format(train_acc, cost))
         print("\tDev accuracy: {0:.4f} %".format(dev_acc))
 
